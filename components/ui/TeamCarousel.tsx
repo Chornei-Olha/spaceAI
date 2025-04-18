@@ -51,7 +51,6 @@ const TeamCarousel = ({ teamMembers }: TeamCarouselProps) => {
                   </a>
                 )}
               </div>
-              <p className="text-sm text-gray-600">{member.role}</p>
             </div>
           </div>
         ))}
