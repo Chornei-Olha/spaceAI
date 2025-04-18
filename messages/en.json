@@ -1,0 +1,138 @@
+{
+  "NavbarLinks": {
+    "home": "Home",
+    "homeTitle": "Home page",
+    "about": "About",
+    "aboutTitle": "About page",
+    "documents": "Documents",
+    "business": "Business Plan"
+  },
+  "HomePage": {
+    "title": "Space AI Cryptocurrency – Earning Profit in the Crypto-Financial Market Segment",
+    "text1": "Cryptocurrency is confidently spreading around the world! More than 500 million people worldwide are involved in crypto. Some buy, some sell. Many try to earn money on crypto exchanges, but usually lose it. Do you know why?",
+    "text2": "Staking, inclusive blockchains, Sybil attack, Wyckoff, wash trading... Complicated? Yes! And even harder — to win without understanding these terms.",
+    "text3": "Artificial intelligence beats world champions in chess and Go — it predicts the future. And now this intelligence is working for",
+    "text4": "It independently invests in cryptocurrencies, NFTs, and GameFi. It buys, sells, analyzes — without emotions or mistakes, under expert supervision.",
+    "text5": "The most expensive NFT image was sold for $150 million! Half the world is in gaming hubs. Space AI’s AI invests in these niches and earns insane returns.",
+    "text6": "Space AI earns huge daily returns when its AI invests in these business directions. Unlike humans, AI knows exactly when to buy, sell, stake, or withdraw. It predicts, anticipates, and invests — all under the guidance of the experienced Space AI team. And we, the investors, receive on average 1% of the company's investment gains per day — and even more!!",
+    "text7": "Investors receive on average 1% daily profit. And that’s not the limit.",
+    "text8": "The company",
+    "text9": "is official and has all the registration documents in the USA. Website",
+    "text10": "Want to join? Register in the",
+    "text11": "Our Team",
+    "text12": "is a Web3.0 platform that combines social networks, artificial intelligence, quantitative analysis, and investment.",
+    "text13": "Space AI provides a complete digital experience and innovative investment opportunities",
+    "text14": "through such app ecosystems as Lite Social, AI Smart Toolset, AI Quantitative Analysis, Decentralized Wallet, Swap, Exchange, GameFi Metaverse, and NFT.",
+    "text15": " Website:",
+    "text16": "Join — in the",
+    "text17": "Are you ready for the financial revolution?",
+    "text18": "Step into a new level of investing with cryptocurrency and stay ahead of the trend!"
+  },
+
+  "AboutPage": {
+    "title": "About Us",
+    "heroDescription": "Learn more about Space AI and how we use artificial intelligence to create financial opportunities.",
+    "companyParagraph1": "Space AI Investments Limited, the parent company of Space AI Platform, is an innovative joint venture specializing in high-tech fields such as crypto assets, artificial intelligence, and precision manufacturing. Space AI is headquartered in Colorado, USA.",
+    "companyParagraph2": "The company focuses on developing and providing cryptocurrency trading services powered by advanced AI technologies. Its goal is to help users earn through innovative IT solutions.",
+    "howTitle": "How does Space AI make money?",
+    "howList1": "AI trading operations: profits are shared between the user, the company, and the buffer fund.",
+    "howList2": "AI service fee — 5% daily.",
+    "howList3": "SAT to USDT exchange fee — 10%.",
+    "howList4": "The buffer fund covers user losses.",
+    "refTitle": "Referral System and Earnings",
+    "refList1": "6% referral bonus from team members' investments.",
+    "refList2": "Daily team income: 20–1% depending on level.",
+    "refList3": "Weekly and monthly bonuses (up to $100 weekly and $100 monthly).",
+    "incomeTitle": "Where does our income come from?",
+    "incomeDescription": "When an AI-powered transaction is completed, the profit is divided into three parts. The first part is our income:",
+    "incomeUserProfitTitle": "User profit",
+    "incomeUserProfitText": "the actual investor profit from AI transactions, paid as a reward.",
+    "incomeReferralBonusTitle": "Referral bonus",
+    "incomeReferralBonusText": "6% from team members’ investments, from the company’s capital pool.",
+    "incomeTeamBonusTitle": "Team daily income discount",
+    "incomeTeamBonusText": "from 1% to 20% daily from participants' income.",
+    "teamGrowthTitle": "Team income growth by S-level",
+    "teamGrowthS1": "S1: +10% to personal daily income",
+    "teamGrowthS2": "S2: +15%",
+    "teamGrowthS3": "S3: +25% and 20% annual tax refund",
+    "teamGrowthS4": "S4: +35% and 25% annual tax refund",
+    "weeklySalaryTitle": "Weekly Salary",
+    "weeklySalaryS1": "S1: $10",
+    "weeklySalaryS2": "S2: $25",
+    "weeklySalaryS3": "S3: $60",
+    "weeklySalaryS4": "S4: $100",
+    "monthlySalaryTitle": "Monthly Salary",
+    "monthlyInvestors50": "50 investors in team — $100 USDT",
+    "monthlyInvestors200": "200 investors in team — additional $100 USDT",
+    "aiLogicTitle": "How Space AI Logic Works",
+    "aiLogicParagraph1": "The development of artificial intelligence depends on data processing, algorithms, and computing power. The system performs quantitative trading strategies, analyzes markets, generates signals, tests them, and constantly optimizes.",
+    "aiLogicParagraph2": "If the AI incurs losses, the company compensates them from a buffer fund. The guaranteed minimum profit is 0.5% per day.",
+
+    "socialImpactTitle": "Social Challenges and Solutions",
+    "socialImpactText": "Mass AI adoption may lead to job loss. Profit distribution among people helps avoid social conflict and supports technology development.",
+
+    "msbTitle": "What is the MSB License?",
+    "msb1": "Ensures compliance with legislation (AML/CFT).",
+    "msb2": "Builds trust and customer protection.",
+    "msb3": "Transaction control to prevent fraud.",
+    "msb4": "Enables business expansion.",
+    "msb5": "High service standards.",
+
+    "futurePlansTitle": "Space AI Development Plans",
+    "futurePlansText": "The company has an MSB license, publishes contract code, collaborates with other projects, and prepares SAT token listing. The Orange package provides a fixed income of 1.3% due to risk control, stable investments, and partnerships.",
+
+    "futureTogetherTitle": "The Future Together",
+    "futureTogetherText": "We are creating an innovative financial ecosystem where everyone can earn."
+  },
+
+  "BusinessSection": {
+    "title": "Business Plan",
+    "heroDescription": "Discover how to earn with our referral system, staking, and team growth.",
+    "sections": {
+      "section2": {
+        "title": "Earn Together",
+        "description": "Earn Together is a powerful component of our referral system, designed to support the community and ensure mutual benefits between participants.",
+        "invitationCodeSystem": "Invitation Code System: To become part of the Space AI community, users must enter an invitation code from an existing participant.",
+        "referrerIncome": "Referrer's Income: When a user spends SAT tokens on a quantitative bet, it increases the referrer's reward.",
+        "referralProgram": {
+          "generation1": "20% — 1st generation",
+          "generation2": "10% — 2nd generation",
+          "generation3": "5% — 3rd generation",
+          "generation4": "2.5% — 4th generation",
+          "generation5": "1.25% — 5th generation",
+          "generation6to10": "1% — 6–10th generation"
+        },
+        "bonusForDeposit": {
+          "generation1": "6% — 1st generation",
+          "generation2": "2% — 2nd generation",
+          "generation3": "1% — 3rd generation"
+        },
+        "qualification": "Qualification: To receive rewards, you need to stake SAT or SUSD."
+      },
+      "section3": {
+        "title": "Staking (Package)",
+        "description": "Staking allows you to earn SAT by locking tokens for a certain period.",
+        "stakingSAT": "Staking SAT: Profit from locking tokens.",
+        "earlyCompletion": "Early Completion: Return SAT within 24 hours.",
+        "interestRates": {
+          "$100-999": "480%",
+          "$1000-9999": "540%",
+          "$10000-99999": "600%",
+          "$100000+": "660%"
+        },
+        "userChoice": "Users choose the amount and period based on their goals."
+      },
+      "section4": {
+        "title": "Team Building and S-levels",
+        "description": "Example: You invited 3 people each with 950 USDT:",
+        "bonus": "171 USDT bonus",
+        "S1": "+10% daily income, 10 USDT/week",
+        "referrerIncome": "20% of the invited person's income",
+        "monthlyIncome": "Monthly Income: 601 USDT. When moving to S2 (3 S1 participants):",
+        "S2": "+15% daily bonus, 25 USDT/week, 20% — level 1, 10% — level 2",
+        "monthlyIncomeS2": "Income: 766.5 USDT/month",
+        "growthToS4": "To grow to S4+, you need 3 active participants of the same level. It’s optimal to have 15 participants and choose the strongest."
+      }
+    }
+  }
+}
