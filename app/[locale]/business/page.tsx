@@ -46,7 +46,9 @@ const BusinessSection = () => {
               </p>
               <p>{t("sections.section2.referrerIncome")}</p>
               <p>
-                <strong>{t("sections.section2.referralProgram")}</strong>
+                <strong>
+                  {t("sections.section2.referralProgram.generation6")}
+                </strong>
               </p>
               <ul className="list-disc list-inside ml-4">
                 <li>{t("sections.section2.referralProgram.generation1")}</li>
@@ -59,7 +61,9 @@ const BusinessSection = () => {
                 </li>
               </ul>
               <p>
-                <strong>{t("sections.section2.bonusForDeposit")}</strong>
+                <strong>
+                  {t("sections.section2.bonusForDeposit.generation4")}
+                </strong>
               </p>
               <ul className="list-disc list-inside ml-4">
                 <li>{t("sections.section2.bonusForDeposit.generation1")}</li>
@@ -79,6 +83,22 @@ const BusinessSection = () => {
           </div>
           <Card>
             <CardContent className="space-y-4 pt-6 text-black">
+              <p>{t("intro")}</p>
+
+              <p>
+                <strong>{t("stakeTitle")}</strong>
+                <br />
+                {t("stakeText")}
+              </p>
+
+              <p>{t("unstakeText")}</p>
+
+              <p>
+                <strong>{t("rewardsTitle")}</strong>
+                <br />
+                {t("rewardsText")}
+              </p>
+
               <p>{t("sections.section3.description")}</p>
               <ul className="list-disc list-inside ml-4">
                 <li>
@@ -89,15 +109,17 @@ const BusinessSection = () => {
                 </li>
               </ul>
               <p>
-                <strong>{t("sections.section3.interestRates")}</strong>
+                <strong>{t("sections.section3.interestRates.apr")}</strong>
               </p>
               <table className="w-full text-left border mt-4 border-collapse">
                 <thead>
                   <tr className="bg-gray-800 text-white">
                     <th className="p-2 border">
-                      {t("sections.section3.amount")}
+                      {t("sections.section3.interestRates.amount")}
                     </th>
-                    <th className="p-2 border">{t("sections.section3.APR")}</th>
+                    <th className="p-2 border">
+                      {t("sections.section3.interestRates.apr")}
+                    </th>
                   </tr>
                 </thead>
                 <tbody className="bg-gray-900 text-white">
@@ -120,6 +142,9 @@ const BusinessSection = () => {
                 </tbody>
               </table>
               <p>{t("sections.section3.userChoice")}</p>
+              <div className="bg-blue-50 border border-blue-200 text-blue-800 text-base md:text-lg p-4 rounded-xl shadow-sm">
+                {t("boostInfo")}
+              </div>
             </CardContent>
           </Card>
 

@@ -1,23 +1,18 @@
 import NewsSection from "@/components/NewsSection";
-
-const newsData = [
-  {
-    title: "Запуск нового продукта",
-    description:
-      "Мы рады представить вам нашу новую разработку, которая изменит рынок.",
-    image: "/images/news1.jpg",
-    date: "16 апреля 2025",
-  },
-  {
-    title: "Наша команда на конференции",
-    description:
-      "Участвовали в IT-событии года и рассказали о будущем технологий.",
-    image: "/images/news2.jpg",
-    date: "10 апреля 2025",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function NewsPage() {
+  const t = useTranslations("NewsSection");
+
+  const newsData = [
+    {
+      title: t("news1.title"),
+      description: t("news1.description"),
+      image: "/images/news1.jpg",
+      date: "19 квітня 2025",
+    },
+  ];
+
   return (
     <main>
       {/* другие секции */}

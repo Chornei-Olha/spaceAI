@@ -34,44 +34,38 @@ const DocumentsSection = () => {
       <section className="w-full px-6 max-w-6xl mx-auto space-y-12 text-gray-800">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold">Документи компанії</h2>
+            <h2 className="text-2xl font-bold">{t("sectionTitle")}</h2>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
               <li>
-                <strong>Гарна репутація, підтверджена фактами:</strong> Офіс
-                Державного секретаря штату Колорадо видав сертифікат факту
-                доброї репутації про те що компанія створена відповідно до
-                законодавства штату, дотримується вимог і має добру репутацію.{" "}
+                <strong>{t("item1Title")}</strong> {t("item1Text")}{" "}
                 <a
                   href="https://abk.spaios.com/config/PDF11.pdf"
                   target="_blank"
                   className="text-blue-600 underline"
                 >
-                  Переглянути документ
+                  {t("item1Link")}
                 </a>
                 .
               </li>
               <li>
-                <strong>Свідоцтво про реєстрацію підприємства:</strong>{" "}
+                <strong>{t("item2Title")}</strong>{" "}
                 <a
                   href="https://abk.spaios.com/config/PDF22.pdf"
                   target="_blank"
                   className="text-blue-600 underline"
                 >
-                  Оригінал документу
+                  {t("item2Link")}
                 </a>
                 .
               </li>
               <li>
-                <strong>MSB ліцензія:</strong> Інформація про статус реєстрації
-                MSB станом на 26.08.2024. Реєстрація компанії на сайті MSB
-                Registrant Search не є схваленням чи підтвердженням державними
-                органами.{" "}
+                <strong>{t("item3Title")}</strong> {t("item3Text")}{" "}
                 <a
                   href="https://abk.spaios.com/config/PDF33.pdf"
                   target="_blank"
                   className="text-blue-600 underline"
                 >
-                  Оригінал документу
+                  {t("item3Link")}
                 </a>
                 .
               </li>

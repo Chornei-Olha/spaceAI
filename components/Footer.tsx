@@ -13,21 +13,20 @@ const Footer = () => {
             width={48}
             height={48}
           />
-          <span className="text-xl font-semibold">Моя Компания</span>
         </div>
 
         {/* Слоган */}
         <div className="text-center">
           <p className="text-lg italic">
-            "Ваш надежный партнёр в мире технологий"
+            &quot;Space AI – ваш щоденний дохід&quot;
           </p>
         </div>
 
         {/* Контакты */}
         <div className="text-right space-y-1">
-          <p>📞 +3 (067) 456-78-90</p>
+          {/* <p>📞 +3 (067) 456-78-90</p> */}
           <p>📧 info@company.com</p>
-          <p>📍 Україна, ул. Примерная, 10</p>
+          <p>📍 https://www.spaios.us/</p>
         </div>
       </div>
     </footer>

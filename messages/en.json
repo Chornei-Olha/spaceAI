@@ -3,9 +3,11 @@
     "home": "Home",
     "homeTitle": "Home page",
     "about": "About",
-    "aboutTitle": "About page",
     "documents": "Documents",
-    "business": "Business Plan"
+    "business": "Business Plan",
+    "team": "Our Team",
+    "news": "News",
+    "aboutTitle": "About page"
   },
   "HomePage": {
     "title": "Space AI Cryptocurrency – Earning Profit in the Crypto-Financial Market Segment",
@@ -67,27 +69,47 @@
     "aiLogicTitle": "How Space AI Logic Works",
     "aiLogicParagraph1": "The development of artificial intelligence depends on data processing, algorithms, and computing power. The system performs quantitative trading strategies, analyzes markets, generates signals, tests them, and constantly optimizes.",
     "aiLogicParagraph2": "If the AI incurs losses, the company compensates them from a buffer fund. The guaranteed minimum profit is 0.5% per day.",
-
     "socialImpactTitle": "Social Challenges and Solutions",
     "socialImpactText": "Mass AI adoption may lead to job loss. Profit distribution among people helps avoid social conflict and supports technology development.",
-
     "msbTitle": "What is the MSB License?",
     "msb1": "Ensures compliance with legislation (AML/CFT).",
     "msb2": "Builds trust and customer protection.",
     "msb3": "Transaction control to prevent fraud.",
     "msb4": "Enables business expansion.",
     "msb5": "High service standards.",
-
     "futurePlansTitle": "Space AI Development Plans",
     "futurePlansText": "The company has an MSB license, publishes contract code, collaborates with other projects, and prepares SAT token listing. The Orange package provides a fixed income of 1.3% due to risk control, stable investments, and partnerships.",
-
     "futureTogetherTitle": "The Future Together",
     "futureTogetherText": "We are creating an innovative financial ecosystem where everyone can earn."
+  },
+
+  "DocumentsSection": {
+    "title": "Company Documents",
+    "heroDescription": "We ensure full transparency in our operations. Here you can view our key legal documents.",
+    "futureTitle": "Transparency Is Our Strength",
+    "futureText": "Trust begins with openness. Review our documents and see the company's reliability for yourself.",
+    "sectionTitle": "Company Documents",
+    "item1Title": "Good standing proven by facts:",
+    "item1Text": "The Office of the Secretary of State of Colorado has issued a certificate of good standing, confirming that the company is formed in accordance with state law, complies with regulations, and is in good standing.",
+    "item1Link": "View document",
+    "item2Title": "Certificate of business registration:",
+    "item2Link": "Original document",
+    "item3Title": "MSB license:",
+    "item3Text": "Information about MSB registration status as of 08/26/2024. Being listed on the MSB Registrant Search does not imply approval or endorsement by government authorities.",
+    "item3Link": "Original document",
+    "imageAlt": "Company documents"
   },
 
   "BusinessSection": {
     "title": "Business Plan",
     "heroDescription": "Discover how to earn with our referral system, staking, and team growth.",
+    "boostInfo": "Choosing a higher staking amount can provide a higher annual interest rate, thus encouraging users to commit to holding SAT tokens for a longer period.",
+    "intro": "Staking in Space AI is a powerful mechanism that allows users to utilize their SAT tokens and earn additional SAT interest.",
+    "stakeTitle": "Stake SAT tokens:",
+    "stakeText": "Staking involves locking a certain amount of SAT tokens. This action represents your commitment to hold and grow your SAT assets over a period of time.",
+    "unstakeText": "If at any point you choose not to continue staking, you can stop early. Your SAT tokens will be returned to your account within 24 hours.",
+    "rewardsTitle": "Earning SAT interest:",
+    "rewardsText": "By staking SAT tokens, you are entitled to earn SAT interest. This means you will receive additional SAT tokens as a reward for holding your assets.",
     "sections": {
       "section2": {
         "title": "Earn Together",
@@ -95,6 +117,7 @@
         "invitationCodeSystem": "Invitation Code System: To become part of the Space AI community, users must enter an invitation code from an existing participant.",
         "referrerIncome": "Referrer's Income: When a user spends SAT tokens on a quantitative bet, it increases the referrer's reward.",
         "referralProgram": {
+          "generation6": "Referral program",
           "generation1": "20% — 1st generation",
           "generation2": "10% — 2nd generation",
           "generation3": "5% — 3rd generation",
@@ -103,6 +126,7 @@
           "generation6to10": "1% — 6–10th generation"
         },
         "bonusForDeposit": {
+          "generation4": "Cash discount for guests",
           "generation1": "6% — 1st generation",
           "generation2": "2% — 2nd generation",
           "generation3": "1% — 3rd generation"
@@ -118,7 +142,9 @@
           "$100-999": "480%",
           "$1000-9999": "540%",
           "$10000-99999": "600%",
-          "$100000+": "660%"
+          "$100000+": "660%",
+          "amount": "Amount",
+          "apr": "Interest rate"
         },
         "userChoice": "Users choose the amount and period based on their goals."
       },
@@ -133,6 +159,12 @@
         "monthlyIncomeS2": "Income: 766.5 USDT/month",
         "growthToS4": "To grow to S4+, you need 3 active participants of the same level. It’s optimal to have 15 participants and choose the strongest."
       }
+    }
+  },
+  "NewsSection": {
+    "news1": {
+      "title": "An investor's review of their journey and experience with the company.",
+      "description": "Yesterday, I achieved financial independence through this system in just 3 weeks. At first, I didn’t want to share this with anyone because people can be jealous or judgmental when someone succeeds. But now I’m telling you because it might give hope or inspire someone. I’ve been an entrepreneur for 4.5 years. I regularly invested in index and ETF funds to prepare for retirement. For a long time, I dreamed of a monthly income that could replace my salary and provide freedom. I also invested in dividend-paying companies, but they brought less than €10/month, and the interest income was only about €100. No vacations. I quickly understood how SpaceAi works, how fast it returns capital, and I moved 1/4 of my investments here. Yesterday I got my first significant return, and today the second. Even after a 10% platform fee and 30% capital tax, my income matches or exceeds my salary. I’m now financially independent. When I was about to shut down my company due to losses — this came just in time. I hope SpaceAi continues for many more years."
     }
   }
 }
