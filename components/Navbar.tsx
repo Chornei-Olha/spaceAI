@@ -22,14 +22,17 @@ const Navbar = ({ locale }: { locale: string }) => {
   return (
     <div className="w-full border-b pr-4 flex justify-between items-center bg-[#210a36]">
       {/* 🔗 Логотип как ссылка на главную */}
-      <Link href={`/${locale}/`} className="flex items-center">
+      <Link href={`/${locale}/`} className="flex items-center relative">
         <Image
           src="/images/Logo.jpg"
           alt="Logo"
-          width={200}
+          width={300}
           height={40}
           priority
+          className="z-10"
         />
+        {/* Псевдоэлемент для размытия нижнего края */}
+        <div className="absolute bottom-0 left-0 right-0 h-4 bg-gradient-to-t from-white to-transparent blur-sm"></div>
       </Link>
 
       {/* Desktop nav */}

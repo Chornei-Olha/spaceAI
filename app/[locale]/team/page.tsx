@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import { FaTelegramPlane } from "react-icons/fa";
 import { useTranslations } from "next-intl";
-import TeamCarousel from "@/components/ui/TeamCarousel";
 
 const teamMembers = [
   {
@@ -105,8 +105,46 @@ const TeamSection = () => {
         </div>
       </div>
 
-      <div className="mt-12 max-w-6xl mx-auto px-4">
-        <TeamCarousel teamMembers={teamMembers} />
+      {/* Карточки команды */}
+      <div className="mt-12 max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {teamMembers.map((member, index) => (
+          <div
+            key={index}
+            className="bg-white shadow-lg rounded-lg overflow-hidden"
+          >
+            <div className="relative w-full h-64">
+              <Image
+                src={member.image}
+                alt={member.name}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-t-lg"
+              />
+            </div>
+            <div className="p-6 space-y-4">
+              <h4 className="text-xl font-semibold text-gray-800 text-center">
+                {member.name}
+              </h4>
+              <div className="flex gap-2">
+                <a
+                  href={member.telegram}
+                  target="_blank"
+                  className="flex items-center gap-2 px-2 py-1 text-black bg-[#3fdae4] rounded-2xl hover:bg-[#fd9443]"
+                >
+                  <FaTelegramPlane size={18} />
+                  {t("writeMessage")}
+                </a>
+                <a
+                  href={member.website}
+                  target="_blank"
+                  className="px-2 py-1 text-black bg-[#3fdae4] rounded-2xl hover:bg-[#fd9443] text-center"
+                >
+                  {t("joinTeam")}
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
