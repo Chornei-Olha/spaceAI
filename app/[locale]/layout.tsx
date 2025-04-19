@@ -5,6 +5,9 @@ import { getMessages } from "next-intl/server";
 import Footer from "../../components/Footer";
 
 export const metadata = {
+  title: "Space AI",
+  description:
+    "Space AI — is a Web3.0 platform that combines social networks, artificial intelligence, quantitative analysis, and investment. Space AI provides a complete digital experience and innovative investment opportunities",
   icons: {
     icon: "/favicon.jpg",
   },
