@@ -33,7 +33,7 @@ export default function Home() {
       <section className="flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/images/nft-invest.jpg"
+            src="/images/IMG-20250409-WA0072.jpg"
             alt="NFT market"
             width={600}
             height={400}
@@ -79,7 +79,7 @@ export default function Home() {
       <section className="flex flex-col md:flex-row-reverse items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/images/web3-platform.jpg"
+            src="/images/IMG_20250306_202144_849.png"
             alt="Web3 platform"
             width={600}
             height={400}

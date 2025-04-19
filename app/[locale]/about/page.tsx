@@ -39,7 +39,7 @@ const AboutPage = () => {
             <p>{t("companyParagraph2")}</p>
           </div>
           <img
-            src="/images/about-company.jpg"
+            src="/images/IMG_20250410_173212_737.jpg"
             alt="Про компанію"
             className="rounded-2xl shadow-md w-full"
           />
@@ -121,7 +121,7 @@ const AboutPage = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <img
-            src="/images/ai-logic.jpg"
+            src="/images/IMG-20250331-WA0172.jpg"
             alt="AI Logic"
             className="rounded-2xl shadow-md w-full"
           />
@@ -133,45 +133,32 @@ const AboutPage = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-4">
-            <h2 className="text-2xl font-bold">{t("socialImpactTitle")}</h2>
-            <p>{t("socialImpactText")}</p>
+          <div className="space-y-4 flex flex-col gap-[50px]">
+            <div>
+              <h2 className="text-2xl font-bold">{t("socialImpactTitle")}</h2>
+              <p>{t("socialImpactText")}</p>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold">{t("msbTitle")}</h2>
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>{t("msb1")}</li>
+                <li>{t("msb2")}</li>
+                <li>{t("msb3")}</li>
+                <li>{t("msb4")}</li>
+                <li>{t("msb5")}</li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold">{t("futurePlansTitle")}</h2>
+              <p>{t("futurePlansText")}</p>
+            </div>
           </div>
+
           <img
-            src="/images/social-impact.jpg"
+            src="/images/IMG-20250320-WA0051.jpg"
             alt="Social Impact"
-            className="rounded-2xl shadow-md w-full"
+            className="rounded-2xl shadow-md w-auto max-h-[600px]"
           />
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-4">
-            <h2 className="text-2xl font-bold">{t("msbTitle")}</h2>
-            <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li>{t("msb1")}</li>
-              <li>{t("msb2")}</li>
-              <li>{t("msb3")}</li>
-              <li>{t("msb4")}</li>
-              <li>{t("msb5")}</li>
-            </ul>
-          </div>
-          <img
-            src="/images/msb-license.png"
-            alt="MSB License"
-            className="rounded-2xl shadow-md w-full"
-          />
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <img
-            src="/images/future.jpg"
-            alt="Future Plans"
-            className="rounded-2xl shadow-md w-full"
-          />
-          <div className="space-y-4">
-            <h2 className="text-2xl font-bold">{t("futurePlansTitle")}</h2>
-            <p>{t("futurePlansText")}</p>
-          </div>
         </div>
       </section>
 

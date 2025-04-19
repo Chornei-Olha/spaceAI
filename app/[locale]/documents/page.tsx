@@ -72,7 +72,7 @@ const DocumentsSection = () => {
             </ul>
           </div>
           <img
-            src="/images/documents.jpg"
+            src="/images/IMG_20250306_234850_829.jpg"
             alt="Документи компанії"
             className="rounded-2xl shadow-md w-full"
           />
