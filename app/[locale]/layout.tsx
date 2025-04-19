@@ -4,6 +4,12 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Footer from "../../components/Footer";
 
+export const metadata = {
+  icons: {
+    icon: "/favicon.jpg",
+  },
+};
+
 export default async function RootLayout({
   children,
   params: { locale },
