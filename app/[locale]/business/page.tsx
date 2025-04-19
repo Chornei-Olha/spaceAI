@@ -31,11 +31,11 @@ const BusinessSection = () => {
         </p>
       </section>
 
-      <section className="w-full px-6 max-w-6xl mx-auto space-y-12">
+      <section className="w-full px-2 max-w-6xl mx-auto space-y-12">
         <div className="space-y-8">
           {/* Section 2 */}
-          <div className="flex items-center gap-2 text-yellow-400 text-2xl font-semibold">
-            <Users className="w-6 h-6" />
+          <div className="flex items-center gap-2 text-[#5fbdcf] text-2xl font-semibold">
+            <Users className="w-6 h-6 " />
             <h2>{t("sections.section2.title")}</h2>
           </div>
           <Card>
@@ -77,7 +77,7 @@ const BusinessSection = () => {
           </Card>
 
           {/* Section 3 */}
-          <div className="flex items-center gap-2 text-green-400 text-2xl font-semibold">
+          <div className="flex items-center gap-2 text-[#5fbdcf] text-2xl font-semibold">
             <Coins className="w-6 h-6" />
             <h2>{t("sections.section3.title")}</h2>
           </div>
@@ -108,12 +108,12 @@ const BusinessSection = () => {
                   <strong>{t("sections.section3.earlyCompletion")}</strong>
                 </li>
               </ul>
-              <p>
+              <p className="text-center">
                 <strong>{t("sections.section3.interestRates.apr")}</strong>
               </p>
-              <table className="w-full text-left border mt-4 border-collapse">
+              <table className="w-1/2 mx-auto text-left border mt-4 border-collapse">
                 <thead>
-                  <tr className="bg-gray-800 text-white">
+                  <tr className="bg-blue-50 text-black">
                     <th className="p-2 border">
                       {t("sections.section3.interestRates.amount")}
                     </th>
@@ -122,7 +122,7 @@ const BusinessSection = () => {
                     </th>
                   </tr>
                 </thead>
-                <tbody className="bg-gray-900 text-white">
+                <tbody className="bg-blue-50 text-black">
                   <tr>
                     <td className="p-2 border">$100 - $999</td>
                     <td className="p-2 border">480%</td>
@@ -149,7 +149,7 @@ const BusinessSection = () => {
           </Card>
 
           {/* Section 4 */}
-          <div className="flex items-center gap-2 text-blue-400 text-2xl font-semibold">
+          <div className="flex items-center gap-2 text-[#5fbdcf] text-2xl font-semibold">
             <Sparkles className="w-6 h-6" />
             <h2>{t("sections.section4.title")}</h2>
           </div>

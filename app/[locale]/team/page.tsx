@@ -21,7 +21,7 @@ const teamMembers = [
   },
   {
     name: "Артем",
-    image: "/images/team/ArtemCut.jpg",
+    image: "/images/team/artemCut.jpg",
     telegram: "https://t.me/AhillesAA",
     website:
       "https://app.spaceaius.com/#/pages/login/login?invitationCode=8471200600",
@@ -53,11 +53,11 @@ const TeamSection = () => {
   const t = useTranslations("Team");
 
   return (
-    <section className="w-full bg-white text-gray-800 mb-[30px]">
+    <section className="w-full bg-[#f6f6f6] text-gray-800 mb-[30px]">
       {/* 🔥 Banner */}
-      <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
+      <div className="relative w-full h-[300px] md:h-[500px] overflow-hidden">
         <Image
-          src="/team/banner.jpg"
+          src="/images/IMG_20250306_234851_125.jpg"
           alt="Team Banner"
           layout="fill"
           objectFit="cover"
@@ -73,7 +73,7 @@ const TeamSection = () => {
         </div>
       </div>
 
-      <div className="py-20 px-4 sm:px-6 lg:px-12">
+      <div className="pt-10 px-4 sm:px-6 lg:px-12">
         <div className="max-w-6xl mx-auto text-center space-y-14">
           <div>
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
@@ -110,7 +110,7 @@ const TeamSection = () => {
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="bg-white shadow-lg rounded-lg overflow-hidden"
+            className="bg-white rounded-lg overflow-hidden transition-shadow duration-300 hover:shadow-[0_4px_12px_rgba(253,148,67,0.5)]"
           >
             <div className="relative w-full h-64">
               <Image
@@ -125,11 +125,11 @@ const TeamSection = () => {
               <h4 className="text-xl font-semibold text-gray-800 text-center">
                 {member.name}
               </h4>
-              <div className="flex gap-2">
+              <div className="flex justify-between">
                 <a
                   href={member.telegram}
                   target="_blank"
-                  className="flex items-center gap-2 px-2 py-1 text-black bg-[#3fdae4] rounded-2xl hover:bg-[#fd9443]"
+                  className="flex items-center justify-center gap-2 px-2 py-1 w-1/3 max-w-[180px] text-black bg-[#5fbdcf] rounded-2xl hover:bg-[#fd9443] hover:text-white text-center"
                 >
                   <FaTelegramPlane size={18} />
                   {t("writeMessage")}
@@ -137,7 +137,7 @@ const TeamSection = () => {
                 <a
                   href={member.website}
                   target="_blank"
-                  className="px-2 py-1 text-black bg-[#3fdae4] rounded-2xl hover:bg-[#fd9443] text-center"
+                  className="px-2 py-1 w-2/3 max-w-[180px] text-black bg-[#5fbdcf] rounded-2xl hover:bg-[#fd9443] hover:text-white text-center"
                 >
                   {t("joinTeam")}
                 </a>

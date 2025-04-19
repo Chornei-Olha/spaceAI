@@ -4,9 +4,8 @@
 
 body {
   font-synthesis: none;
+  background-color: #f6f6f6;
 }
-
-
 
 @layer base {
   :root {
@@ -63,8 +62,6 @@ body {
     --chart-5: 340 75% 55%;
   }
 }
-
-
 
 @layer base {
   * {
