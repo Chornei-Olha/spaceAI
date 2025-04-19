@@ -19,7 +19,7 @@ export default async function RootLayout({
           <div className="mx-auto max-w-6xl h-screen">
             <Navbar locale={locale} />
             {children}
-            <Footer />
+            <Footer locale={locale} />
           </div>
         </NextIntlClientProvider>
       </body>

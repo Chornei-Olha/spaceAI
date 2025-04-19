@@ -27,7 +27,7 @@ const Footer = ({ locale }: { locale: string }) => {
 
         {/* Слоган */}
         <div className="text-center">
-          <p className="text-lg italic">"{t("slogan")}"</p>
+          <p className="text-lg italic">&quot;{t("slogan")}&quot;</p>
         </div>
 
         {/* Контакты и соцсети */}
