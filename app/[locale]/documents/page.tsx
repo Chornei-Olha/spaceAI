@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { getMessages } from "next-intl/server";
 import React from "react";
+import Image from "next/image"; // Import the Image component
 
 export async function generateMetadata({
   params: { locale },
@@ -71,11 +72,16 @@ const DocumentsSection = () => {
               </li>
             </ul>
           </div>
-          <img
-            src="/images/IMG_20250306_234850_829.jpg"
-            alt="Документи компанії"
-            className="rounded-2xl shadow-md w-full"
-          />
+          {/* Updated Image Component */}
+          <div className="w-full">
+            <Image
+              src="/images/IMG_20250306_234850_829.jpg"
+              alt="Документи компанії"
+              width={600} // Specify the width of the image
+              height={400} // Specify the height of the image
+              className="rounded-2xl shadow-md object-cover"
+            />
+          </div>
         </div>
       </section>
 

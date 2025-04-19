@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { getMessages } from "next-intl/server";
+import Image from "next/image"; // Импортируем компонент Image
 import React from "react";
 
 export async function generateMetadata({
@@ -38,11 +39,15 @@ const AboutPage = () => {
             <p>{t("companyParagraph1")}</p>
             <p>{t("companyParagraph2")}</p>
           </div>
-          <img
-            src="/images/IMG_20250410_173212_737.jpg"
-            alt="Про компанію"
-            className="rounded-2xl shadow-md w-full"
-          />
+          <div className="w-full">
+            <Image
+              src="/images/IMG_20250410_173212_737.jpg"
+              alt="Про компанію"
+              width={800} // Ширина изображения
+              height={500} // Высота изображения
+              className="rounded-2xl shadow-md w-full"
+            />
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -53,14 +58,6 @@ const AboutPage = () => {
               <li>{t("howList2")}</li>
               <li>{t("howList3")}</li>
               <li>{t("howList4")}</li>
-            </ul>
-          </div>
-          <div>
-            <h2 className="text-2xl font-bold mb-4">{t("refTitle")}</h2>
-            <ul className="list-disc list-inside space-y-2 text-gray-700">
-              <li>{t("refList1")}</li>
-              <li>{t("refList2")}</li>
-              <li>{t("refList3")}</li>
             </ul>
           </div>
           <div>
@@ -120,11 +117,15 @@ const AboutPage = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <img
-            src="/images/IMG-20250331-WA0172.jpg"
-            alt="AI Logic"
-            className="rounded-2xl shadow-md w-full"
-          />
+          <div className="w-full">
+            <Image
+              src="/images/IMG-20250331-WA0172.jpg"
+              alt="AI Logic"
+              width={800} // Ширина изображения
+              height={500} // Высота изображения
+              className="rounded-2xl shadow-md w-full"
+            />
+          </div>
           <div className="space-y-4">
             <h2 className="text-2xl font-bold">{t("aiLogicTitle")}</h2>
             <p>{t("aiLogicParagraph1")}</p>
@@ -154,11 +155,15 @@ const AboutPage = () => {
             </div>
           </div>
 
-          <img
-            src="/images/IMG-20250320-WA0051.jpg"
-            alt="Social Impact"
-            className="rounded-2xl shadow-md w-auto max-h-[600px]"
-          />
+          <div className="w-full">
+            <Image
+              src="/images/IMG-20250320-WA0051.jpg"
+              alt="Social Impact"
+              width={800} // Ширина изображения
+              height={600} // Высота изображения
+              className="rounded-2xl shadow-md w-auto max-h-[600px]"
+            />
+          </div>
         </div>
       </section>
 
