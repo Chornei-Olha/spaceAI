@@ -96,10 +96,10 @@ const TeamSection = () => {
               {t("whatNeededDesc")}
             </p>
             <p>{t("newsAndBonus")}</p>
-            <p className="font-semibold text-purple-300">{t("finalNote")}</p>
+            <p className="font-semibold text-black">{t("finalNote")}</p>
           </div>
 
-          <h3 className="text-2xl sm:text-3xl font-semibold text-yellow-500 pt-10">
+          <h3 className="text-2xl sm:text-3xl font-semibold text-black pt-10">
             {t("teamTitle")}
           </h3>
         </div>

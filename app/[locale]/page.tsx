@@ -67,12 +67,9 @@ export default function Home() {
       {/* Call to Action */}
       <section className="border border-blue-400 rounded-2xl p-10 bg-blue-50 dark:bg-blue-950 text-blue-900 dark:text-blue-100 max-w-3xl mx-auto text-center shadow-md">
         <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
-          Ви готові до фінансової революції?
+          {t("callToActionTitle")}
         </h2>
-        <p className="text-lg sm:text-xl">
-          Переходьте на новий рівень інвестицій з криптовалютою і будьте у
-          тренді!
-        </p>
+        <p className="text-lg sm:text-xl">{t("callToActionText")}</p>
       </section>
 
       {/* Секция с картинкой справа */}
