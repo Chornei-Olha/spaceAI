@@ -57,7 +57,7 @@ const TeamSection = () => {
       {/* 🔥 Banner */}
       <div className="relative w-full h-[300px] md:h-[500px] overflow-hidden">
         <Image
-          src="/images/IMG_20250306_234851_125.jpg"
+          src="/images/bitcoin.jpg"
           alt="Team Banner"
           layout="fill"
           objectFit="cover"

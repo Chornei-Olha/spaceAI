@@ -8,7 +8,7 @@ export default function NewsPage() {
     {
       title: t("news1.title"),
       description: t("news1.description"),
-      image: "/images/IMG_20250310_191501_742.png", // Check if the image path is correct
+      image: "/images/kripta.jpg", // Check if the image path is correct
       date: "19/04/2025",
     },
   ];

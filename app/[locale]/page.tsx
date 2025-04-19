@@ -5,13 +5,22 @@ export default function Home() {
   const t = useTranslations("HomePage");
 
   return (
-    <div className="w-full px-4 md:px-6 py-10 space-y-24">
-      {/* Заголовок */}
-      <section className="flex justify-center text-center">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-10">
-          {t("title")}
-        </h1>
-      </section>
+    <section className="w-full bg-[#f6f6f6] text-gray-800 mb-[30px] space-y-20">
+      {/* 🔥 Banner */}
+      <div className="relative w-full h-[300px] md:h-[500px] overflow-hidden">
+        <Image
+          src="/images/cripta.jpg"
+          alt="Team Banner"
+          layout="fill"
+          objectFit="cover"
+          className="brightness-50"
+        />
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+          <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg">
+            {t("title")}
+          </h1>
+        </div>
+      </div>
 
       {/* Секция без картинки */}
       <section className="space-y-4 text-base sm:text-lg leading-relaxed mx-auto">
@@ -103,6 +112,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-    </div>
+    </section>
   );
 }

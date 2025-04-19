@@ -39,19 +39,49 @@ const Navbar = ({ locale }: { locale: string }) => {
 
         {/* Desktop nav */}
         <div className="hidden md:flex gap-4 items-center text-lg text-white text-center">
-          <Link href={`/${locale}/`}>{t("home")}</Link>
-          <Link href={`/${locale}/about`}>{t("about")}</Link>
-          <Link href={`/${locale}/documents`}>{t("documents")}</Link>
-          <Link href={`/${locale}/business`}>{t("business")}</Link>
-          <Link href={`/${locale}/news`}>{t("news")}</Link>{" "}
-          <Link href={`/${locale}/team`}>{t("team")}</Link>
+          <Link
+            href={`/${locale}/`}
+            className="active:text-[#5fbdcf] hover:text-[#fd9443]"
+          >
+            {t("home")}
+          </Link>
+          <Link
+            href={`/${locale}/about`}
+            className="active:text-[#5fbdcf] hover:text-[#fd9443]"
+          >
+            {t("about")}
+          </Link>
+          <Link
+            href={`/${locale}/documents`}
+            className="active:text-[#5fbdcf] hover:text-[#fd9443]"
+          >
+            {t("documents")}
+          </Link>
+          <Link
+            href={`/${locale}/business`}
+            className="active:text-[#5fbdcf] hover:text-[#fd9443]"
+          >
+            {t("business")}
+          </Link>
+          <Link
+            href={`/${locale}/news`}
+            className="active:text-[#5fbdcf] hover:text-[#fd9443]"
+          >
+            {t("news")}
+          </Link>{" "}
+          <Link
+            href={`/${locale}/team`}
+            className="active:text-[#5fbdcf] hover:text-[#fd9443]"
+          >
+            {t("team")}
+          </Link>
           <select
             value={locale}
             onChange={handleLanguageChange}
             className="rounded-md px-4 py-2 bg-transparent hover:outline-none focus:outline-none"
           >
-            <option value="en">EN</option>
             <option value="uk">UK</option>
+            <option value="en">EN</option>
             <option value="ru">RU</option>
           </select>
         </div>
@@ -99,8 +129,8 @@ const Navbar = ({ locale }: { locale: string }) => {
               }}
               className="mt-2 rounded-md px-4 py-2 bg-transparent hover:outline-none focus:outline-none"
             >
-              <option value="en">EN</option>
               <option value="uk">UK</option>
+              <option value="en">EN</option>
               <option value="ru">RU</option>
             </select>
           </div>
