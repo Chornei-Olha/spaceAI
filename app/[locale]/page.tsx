@@ -1,8 +1,11 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useLocale } from "next-intl";
 
 export default function Home() {
   const t = useTranslations("HomePage");
+  const locale = useLocale();
 
   return (
     <section className="w-full bg-[#f6f6f6] text-gray-800 mb-[30px] space-y-20">
@@ -61,11 +64,11 @@ export default function Home() {
         <p>
           {t("text8")} <strong>Space AI</strong> — {t("text9")}{" "}
           <a
-            href="https://www.spaios.com/index.html"
+            href="https://www.spaios.us/"
             target="_blank"
             className="text-blue-600 underline"
           >
-            www.spaios.com
+            www.spaios.us
           </a>
         </p>
         <p>
@@ -102,13 +105,20 @@ export default function Home() {
           <p>
             {t("text15")}{" "}
             <a
-              href="https://www.spaios.com/index.html"
+              href="https://www.spaios.us/"
               target="_blank"
               className="text-blue-600 underline"
             >
-              www.spaios.com
+              www.spaios.us
             </a>{" "}
-            | {t("text16")} <strong>{t("text11")}</strong>.
+            | {t("text16")}{" "}
+            <Link
+              href={`/${locale}/team`}
+              className="hover:underline text-blue-600"
+            >
+              <strong>{t("text11")}</strong>
+            </Link>
+            .
           </p>
         </div>
       </section>
