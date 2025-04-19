@@ -7,42 +7,42 @@ import TeamCarousel from "@/components/ui/TeamCarousel";
 const teamMembers = [
   {
     name: "Віталій",
-    image: "/team/oleg.jpg",
+    image: "/images/team/vitaliyCut.jpg",
     telegram: "https://t.me/Vitalii_Rudenko",
     website:
       "https://app.spaceaius.com/#/pages/login/login?invitationCode=2094014634",
   },
   {
     name: "Софія",
-    image: "/team/natalia.jpg",
+    image: "/images/team/sofiya.jpg",
     telegram: "https://t.me/sofia_rudenko",
     website:
       "https://app.spaceaius.com/#/pages/login/login?invitationCode=4082380296",
   },
   {
     name: "Артем",
-    image: "/team/andriy.jpg",
+    image: "/images/team/ArtemCut.jpg",
     telegram: "https://t.me/AhillesAA",
     website:
       "https://app.spaceaius.com/#/pages/login/login?invitationCode=8471200600",
   },
   {
     name: "Тетяна",
-    image: "/team/svitlana.jpg",
+    image: "/images/team/tetyanaCut.jpg",
     telegram: "https://t.me/Tani_Happy",
     website:
       "https://app.spaceaius.com/#/pages/login/login?invitationCode=1788578427",
   },
   {
     name: "Володимир",
-    image: "/team/ivan.jpg",
+    image: "/images/team/volodimirCut.jpg",
     telegram: "https://t.me/Vokodko",
     website:
       "https://app.spaceaius.com/#/pages/login/login?invitationCode=6682176310",
   },
   {
     name: "Євген",
-    image: "/team/maria.jpg",
+    image: "/images/team/evgen.jpg",
     telegram: "https://t.me/evgen3217",
     website:
       "https://app.spaceaius.com/#/pages/login/login?invitationCode=5102408827",
@@ -53,7 +53,7 @@ const TeamSection = () => {
   const t = useTranslations("Team");
 
   return (
-    <section className="w-full bg-white text-gray-800">
+    <section className="w-full bg-white text-gray-800 mb-[30px]">
       {/* 🔥 Banner */}
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
