@@ -166,5 +166,24 @@
       "title": "An investor's review of their journey and experience with the company.",
       "description": "Yesterday, I achieved financial independence through this system in just 3 weeks. At first, I didn’t want to share this with anyone because people can be jealous or judgmental when someone succeeds. But now I’m telling you because it might give hope or inspire someone. I’ve been an entrepreneur for 4.5 years. I regularly invested in index and ETF funds to prepare for retirement. For a long time, I dreamed of a monthly income that could replace my salary and provide freedom. I also invested in dividend-paying companies, but they brought less than €10/month, and the interest income was only about €100. No vacations. I quickly understood how SpaceAi works, how fast it returns capital, and I moved 1/4 of my investments here. Yesterday I got my first significant return, and today the second. Even after a 10% platform fee and 30% capital tax, my income matches or exceeds my salary. I’m now financially independent. When I was about to shut down my company due to losses — this came just in time. I hope SpaceAi continues for many more years."
     }
+  },
+  "Team": {
+    "bannerTitle": "United by a common goal",
+    "bannerSubtitle": "Our team is your foundation for a confident start",
+    "intro": "Do you want to succeed in crypto? Looking for the right way?",
+    "welcome": "Then you are in the right place at the right time! Welcome, our new partners!",
+    "diverseTeam": "Our friendly and large team includes people from different professions: engineers, doctors, military, entrepreneurs, teachers. Young, middle-aged, and senior. No limits!",
+    "invitation": "We invite everyone to join and profit!",
+    "whatNeededTitle": "What do you need for this?",
+    "whatNeededDesc": "Contact one of our leaders, get a short instruction and help to create your personal account. Start investing and earning profit.",
+    "newsAndBonus": "Follow company news. If you wish — invite partners and get financial bonuses.",
+    "finalNote": "Contact any of our team members with any questions! Join us — we are truly glad to have you. Together we'll make life better!",
+    "teamTitle": "Our amazing professional team:"
+  },
+
+  "Footer": {
+    "slogan": "Space AI – your daily income",
+    "email": "info@company.com",
+    "location": "https://www.spaios.us/"
   }
 }
