@@ -6,42 +6,42 @@ import { useTranslations } from "next-intl";
 
 const teamMembers = [
   {
-    name: "Віталій",
+    name: "Vitalii",
     image: "/images/team/vitaliyCut.jpg",
     telegram: "https://t.me/Vitalii_Rudenko",
     website:
       "https://app.spaceaius.com/#/pages/login/login?invitationCode=2094014634",
   },
   {
-    name: "Софія",
+    name: "Sofia",
     image: "/images/team/sofiya.jpg",
     telegram: "https://t.me/sofia_rudenko",
     website:
       "https://app.spaceaius.com/#/pages/login/login?invitationCode=4082380296",
   },
   {
-    name: "Артем",
+    name: "Artem",
     image: "/images/team/artemCut.jpg",
     telegram: "https://t.me/AhillesAA",
     website:
       "https://app.spaceaius.com/#/pages/login/login?invitationCode=8471200600",
   },
   {
-    name: "Тетяна",
+    name: "Tani",
     image: "/images/team/tetyanaCut.jpg",
     telegram: "https://t.me/Tani_Happy",
     website:
       "https://app.spaceaius.com/#/pages/login/login?invitationCode=1788578427",
   },
   {
-    name: "Володимир",
+    name: "Volodumur",
     image: "/images/team/volodimirCut.jpg",
     telegram: "https://t.me/Vokodko",
     website:
       "https://app.spaceaius.com/#/pages/login/login?invitationCode=6682176310",
   },
   {
-    name: "Євген",
+    name: "Evgen",
     image: "/images/team/evgen.jpg",
     telegram: "https://t.me/evgen3217",
     website:

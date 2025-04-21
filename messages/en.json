@@ -21,7 +21,7 @@
     "text8": "The company",
     "text9": "is official and has all the registration documents in the USA. Website",
     "text10": "Want to join? Register in the",
-    "text11": "Our Team",
+    "text11": "Our Team (open in new window)",
     "text12": "is a Web3.0 platform that combines social networks, artificial intelligence, quantitative analysis, and investment.",
     "text13": "Space AI provides a complete digital experience and innovative investment opportunities",
     "text14": "through such app ecosystems as Lite Social, AI Smart Toolset, AI Quantitative Analysis, Decentralized Wallet, Swap, Exchange, GameFi Metaverse, and NFT.",
@@ -82,7 +82,14 @@
     "futurePlansTitle": "Space AI Development Plans",
     "futurePlansText": "The company has an MSB license, publishes contract code, collaborates with other projects, and prepares SAT token listing. The Orange package provides a fixed income of 1.3% due to risk control, stable investments, and partnerships.",
     "futureTogetherTitle": "The Future Together",
-    "futureTogetherText": "We are creating an innovative financial ecosystem where everyone can earn."
+    "futureTogetherText": "We are creating an innovative financial ecosystem where everyone can earn.",
+    "inviteTitle": "Join the Space AI Global Group",
+    "inviteDescription1": "Earn profits in the cryptocurrency segment of the financial market. You'll be satisfied and profitable!",
+    "inviteDescription2": "For any questions, write to us on Telegram or WhatsApp: +38 050 107 1472",
+    "registrationDocs": "Company Registration Documents",
+    "inviteDescription3": "For those who value stable daily income, we provide a link for review and further registration (provided by our Team specialists).",
+    "inviteDescription4": "Registration is via email. Please contact us before registering – we’ll provide personal support and detailed info in private communication.",
+    "inviteClosing": "Join us! Be healthy, happy, and financially secure with Space AI."
   },
 
   "DocumentsSection": {
@@ -104,6 +111,13 @@
 
   "BusinessSection": {
     "title": "Business Plan",
+    "inviteTitle": "Join the Space AI Global Group",
+    "inviteDescription1": "Earn profits in the cryptocurrency segment of the financial market. You'll be satisfied and profitable!",
+    "inviteDescription2": "For any questions, write to us on Telegram or WhatsApp: +38 050 107 1472",
+    "registrationDocs": "Company Registration Documents",
+    "inviteDescription3": "For those who value stable daily income, we provide a link for review and further registration (provided by our Team specialists).",
+    "inviteDescription4": "Registration is via email. Please contact us before registering – we’ll provide personal support and detailed info in private communication.",
+    "inviteClosing": "Join us! Be healthy, happy, and financially secure with Space AI.",
     "heroDescription": "Discover how to earn with our referral system, staking, and team growth.",
     "boostInfo": "Choosing a higher staking amount can provide a higher annual interest rate, thus encouraging users to commit to holding SAT tokens for a longer period.",
     "intro": "Staking in Space AI is a powerful mechanism that allows users to utilize their SAT tokens and earn additional SAT interest.",
@@ -167,6 +181,10 @@
     "news1": {
       "title": "An investor's review of their journey and experience with the company.",
       "description": "Yesterday, I achieved financial independence through this system in just 3 weeks. At first, I didn’t want to share this with anyone because people can be jealous or judgmental when someone succeeds. But now I’m telling you because it might give hope or inspire someone. I’ve been an entrepreneur for 4.5 years. I regularly invested in index and ETF funds to prepare for retirement. For a long time, I dreamed of a monthly income that could replace my salary and provide freedom. I also invested in dividend-paying companies, but they brought less than €10/month, and the interest income was only about €100. No vacations. I quickly understood how SpaceAi works, how fast it returns capital, and I moved 1/4 of my investments here. Yesterday I got my first significant return, and today the second. Even after a 10% platform fee and 30% capital tax, my income matches or exceeds my salary. I’m now financially independent. When I was about to shut down my company due to losses — this came just in time. I hope SpaceAi continues for many more years."
+    },
+    "news2": {
+      "title": "Regarding Investments in Packages: Orange Package",
+      "description": "The Orange Package can provide a fixed return rate of 1.3% mainly for the following reasons.\n\nMarket analysis and risk control: Space Company has determined a fixed return rate of 1.3% through in-depth market analysis and risk assessment. This return rate not only attracts investors but also balances profit and risk to ensure stable operations.\n\nStable investment strategy: The Orange Package adopts a stable investment strategy, primarily investing in stable assets and markets. This reduces investment risk and improves income stability, achieving a fixed return rate.\n\nLong-term partnerships: Space has built strong partnerships and cooperates with reliable financial institutions and investors to ensure the security and stability of funds. These partners provide stable investment channels and income sources, supporting the fixed return rate of the Orange Package.\n\nUser interest guarantee: Space Company always prioritizes user interests, ensuring investment safety and steady returns. The fixed return rate helps build investor confidence, reduces risks, and increases investor satisfaction and loyalty.\n\nIn summary, the Orange Package's ability to offer a fixed 1.3% return is based on deep market analysis, risk control, and stable strategies and partnerships. This provides investors with steady returns while protecting their interests and investments.\n\nJoin us – in the Contacts section!!"
     }
   },
   "Team": {

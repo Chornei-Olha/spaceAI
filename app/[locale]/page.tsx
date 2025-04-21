@@ -72,7 +72,18 @@ export default function Home() {
           </a>
         </p>
         <p>
-          {t("text10")} <strong>{t("text11")}</strong>!
+          {t("text10")}{" "}
+          <strong>
+            <Link
+              href={`/${locale}/team`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline text-blue-600"
+            >
+              <strong>{t("text11")}</strong>
+            </Link>
+          </strong>
+          !
         </p>
       </section>
 
@@ -114,6 +125,8 @@ export default function Home() {
             | {t("text16")}{" "}
             <Link
               href={`/${locale}/team`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:underline text-blue-600"
             >
               <strong>{t("text11")}</strong>

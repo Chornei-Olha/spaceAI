@@ -49,7 +49,7 @@ const DocumentsSection = () => {
               <li>
                 <strong>{t("item1Title")}</strong> {t("item1Text")}{" "}
                 <a
-                  href="https://abk.spaios.com/config/PDF11.pdf"
+                  href="https://www.spaios.us/documents.html"
                   target="_blank"
                   className="text-blue-600 underline"
                 >
@@ -60,7 +60,7 @@ const DocumentsSection = () => {
               <li>
                 <strong>{t("item2Title")}</strong>{" "}
                 <a
-                  href="https://abk.spaios.com/config/PDF22.pdf"
+                  href="https://www.spaios.us/documents.html"
                   target="_blank"
                   className="text-blue-600 underline"
                 >
@@ -71,7 +71,7 @@ const DocumentsSection = () => {
               <li>
                 <strong>{t("item3Title")}</strong> {t("item3Text")}{" "}
                 <a
-                  href="https://abk.spaios.com/config/PDF33.pdf"
+                  href="https://www.spaios.us/documents.html"
                   target="_blank"
                   className="text-blue-600 underline"
                 >

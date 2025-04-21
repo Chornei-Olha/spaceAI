@@ -1,48 +1,57 @@
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 
-type NewsItem = {
+interface NewsItem {
   title: string;
   description: string;
   image: string;
-  date?: string;
-};
+  date: string;
+}
 
-type NewsSectionProps = {
-  news: NewsItem[];
-};
-
-const NewsSection = ({ news }: NewsSectionProps) => {
+const NewsSection = ({ news }: { news: NewsItem[] }) => {
   return (
-    <section className="bg-gray-50 py-12 px-4">
-      <div className="max-w-6xl mx-auto space-y-12">
-        {news.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col md:flex-row items-center gap-6 bg-white rounded-xl shadow-md overflow-hidden"
-          >
-            {/* Left Column (Image) */}
-            <div className="w-full md:w-1/2 relative h-96">
-              {" "}
-              {/* h-96 для установки фиксированной высоты */}
-              <Image
-                src={item.image}
-                alt={item.title}
-                layout="fill"
-                objectFit="contain"
-                className="rounded-l-xl"
-              />
-            </div>
-
-            {/* Right Column (Content) */}
-            <div className="w-full md:w-1/2 p-6 space-y-3 flex flex-col justify-between">
-              <p className="text-sm text-gray-500">{item.date}</p>
-              <h3 className="text-xl font-semibold">{item.title}</h3>
-              <p className="text-gray-700">{item.description}</p>
-            </div>
-          </div>
-        ))}
-      </div>
+    <section className="w-full max-w-6xl px-6 py-10 mx-auto space-y-12">
+      {news.map((item, index) => (
+        <NewsCard key={index} item={item} />
+      ))}
     </section>
+  );
+};
+
+const NewsCard = ({ item }: { item: NewsItem }) => {
+  const [expanded, setExpanded] = useState(false);
+  const toggleExpanded = () => setExpanded(!expanded);
+
+  return (
+    <div className="bg-white shadow-md rounded-xl overflow-hidden">
+      <Image
+        src={item.image}
+        alt={item.title}
+        width={1200}
+        height={600}
+        className="w-full h-64 object-cover"
+      />
+      <div className="p-6 space-y-4">
+        <div className="text-sm text-gray-500">{item.date}</div>
+        <h3 className="text-2xl font-bold">{item.title}</h3>
+        <p className="whitespace-pre-line text-gray-700">
+          {expanded
+            ? item.description
+            : item.description.slice(0, 200) +
+              (item.description.length > 200 ? "..." : "")}
+        </p>
+        {item.description.length > 200 && (
+          <button
+            onClick={toggleExpanded}
+            className="text-blue-600 hover:underline font-medium"
+          >
+            {expanded ? "Close ↖︎" : "More info ↘︎"}
+          </button>
+        )}
+      </div>
+    </div>
   );
 };
 

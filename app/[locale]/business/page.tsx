@@ -194,6 +194,46 @@ const BusinessSection = () => {
           </Card>
         </div>
       </section>
+
+      <section className="border border-blue-400 rounded-2xl mt-10 p-5 bg-blue-50 dark:bg-blue-950 text-blue-900 dark:text-blue-100 max-w-3xl mx-auto text-left shadow-md">
+        <h2 className="text-2xl font-bold">{t("inviteTitle")}</h2>
+        <p>{t("inviteDescription1")}</p>
+        <p>{t("inviteDescription2")}</p>
+        <p>
+          <a
+            href="https://www.facebook.com/groups/spaceaicrypt"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Facebook Group
+          </a>{" "}
+          |{" "}
+          <a
+            href="https://t.me/Space_AI_world"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Telegram
+          </a>{" "}
+          |{" "}
+          <a
+            href="https://www.spaios.us/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            {t("registrationDocs")}
+          </a>
+        </p>
+        <p>{t("inviteDescription3")}</p>
+        <p>{t("inviteDescription4")}</p>
+        <p className="font-semibold">{t("inviteClosing")}</p>
+        <p className="text-sm text-gray-500">
+          #криптовалюта #крипта #crypt #USDT #SAT #SpaceAI #Space_AI
+        </p>
+      </section>
     </section>
   );
 };
