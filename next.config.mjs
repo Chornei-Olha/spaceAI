@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",
+  images: {
+    unoptimized: true, // Отключаем оптимизацию изображений
+  },
+  trailingSlash: true,
+};
 
-import createNextIntlPlugin from "next-intl/plugin";
-
-const withNextIntl = createNextIntlPlugin();
-const nextConfig = {};
-
-export default withNextIntl(nextConfig);
+export default nextConfig;

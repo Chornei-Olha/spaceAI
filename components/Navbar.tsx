@@ -1,30 +1,21 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import React, { ChangeEvent, useState } from "react";
+import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
-import { header } from "framer-motion/client";
+import t from "../messages/uk"; // Используем переводы из uk.ts
 
-const Navbar = ({ locale }: { locale: string }) => {
-  const t = useTranslations("NavbarLinks");
+const Navbar = () => {
   const pathname = usePathname();
-  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
-
-  const handleLanguageChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    const newLocale = e.target.value as string;
-    const path = pathname.split("/").slice(2).join("/");
-    router.push(`/${newLocale}/${path}`);
-  };
 
   return (
     <header className="bg-[#210a36]">
       <div className="max-w-7xl mx-auto pr-4 flex justify-between items-center ">
-        {/* 🔗 Логотип как ссылка на главную */}
-        <Link href={`/${locale}/`} className="flex items-center relative">
+        {/* Логотип как ссылка на главную */}
+        <Link href={"/"} className="flex items-center relative">
           <Image
             src="/images/Logo.jpg"
             alt="Logo"
@@ -40,50 +31,41 @@ const Navbar = ({ locale }: { locale: string }) => {
         {/* Desktop nav */}
         <div className="hidden md:flex gap-4 items-center text-lg text-white text-center">
           <Link
-            href={`/${locale}/`}
+            href={"/"}
             className="active:text-[#5fbdcf] hover:text-[#fd9443]"
           >
-            {t("home")}
+            {t.navbarLinks.home}
           </Link>
           <Link
-            href={`/${locale}/about`}
+            href={"/about"}
             className="active:text-[#5fbdcf] hover:text-[#fd9443]"
           >
-            {t("about")}
+            {t.navbarLinks.about}
           </Link>
           <Link
-            href={`/${locale}/documents`}
+            href={"/documents"}
             className="active:text-[#5fbdcf] hover:text-[#fd9443]"
           >
-            {t("documents")}
+            {t.navbarLinks.documents}
           </Link>
           <Link
-            href={`/${locale}/business`}
+            href={"/business"}
             className="active:text-[#5fbdcf] hover:text-[#fd9443]"
           >
-            {t("business")}
+            {t.navbarLinks.business}
           </Link>
           <Link
-            href={`/${locale}/news`}
+            href={"/news"}
             className="active:text-[#5fbdcf] hover:text-[#fd9443]"
           >
-            {t("news")}
-          </Link>{" "}
-          <Link
-            href={`/${locale}/team`}
-            className="active:text-[#5fbdcf] hover:text-[#fd9443]"
-          >
-            {t("team")}
+            {t.navbarLinks.news}
           </Link>
-          <select
-            value={locale}
-            onChange={handleLanguageChange}
-            className="rounded-md px-4 py-2 bg-transparent hover:outline-none focus:outline-none"
+          <Link
+            href={"/team"}
+            className="active:text-[#5fbdcf] hover:text-[#fd9443]"
           >
-            <option value="uk">UK</option>
-            <option value="en">EN</option>
-            <option value="ru">RU</option>
-          </select>
+            {t.navbarLinks.team}
+          </Link>
         </div>
 
         {/* Mobile menu toggle */}
@@ -100,39 +82,24 @@ const Navbar = ({ locale }: { locale: string }) => {
         {/* Mobile menu */}
         {isOpen && (
           <div className="absolute top-[100px] left-0 w-full bg-white shadow-md flex flex-col items-start px-6 py-4 z-50 gap-4 md:hidden text-lg text-black">
-            <Link href={`/${locale}/`} onClick={() => setIsOpen(false)}>
-              {t("home")}
+            <Link href={"/"} onClick={() => setIsOpen(false)}>
+              {t.navbarLinks.home}
             </Link>
-            <Link href={`/${locale}/about`} onClick={() => setIsOpen(false)}>
-              {t("about")}
+            <Link href={"/about"} onClick={() => setIsOpen(false)}>
+              {t.navbarLinks.about}
             </Link>
-            <Link
-              href={`/${locale}/documents`}
-              onClick={() => setIsOpen(false)}
-            >
-              {t("documents")}
+            <Link href={"/documents"} onClick={() => setIsOpen(false)}>
+              {t.navbarLinks.documents}
             </Link>
-            <Link href={`/${locale}/business`} onClick={() => setIsOpen(false)}>
-              {t("business")}
+            <Link href={"/business"} onClick={() => setIsOpen(false)}>
+              {t.navbarLinks.business}
             </Link>
-            <Link href={`/${locale}/news`} onClick={() => setIsOpen(false)}>
-              {t("news")}
-            </Link>{" "}
-            <Link href={`/${locale}/team`} onClick={() => setIsOpen(false)}>
-              {t("team")}
+            <Link href={"/news"} onClick={() => setIsOpen(false)}>
+              {t.navbarLinks.news}
             </Link>
-            <select
-              value={locale}
-              onChange={(e) => {
-                handleLanguageChange(e);
-                setIsOpen(false);
-              }}
-              className="mt-2 rounded-md px-4 py-2 bg-transparent hover:outline-none focus:outline-none"
-            >
-              <option value="uk">UK</option>
-              <option value="en">EN</option>
-              <option value="ru">RU</option>
-            </select>
+            <Link href={"/team"} onClick={() => setIsOpen(false)}>
+              {t.navbarLinks.team}
+            </Link>
           </div>
         )}
       </div>

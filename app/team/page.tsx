@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { FaTelegramPlane } from "react-icons/fa";
-import { useTranslations } from "next-intl";
+import t from "../../messages/uk";
 
 const teamMembers = [
   {
@@ -50,8 +50,6 @@ const teamMembers = [
 ];
 
 const TeamSection = () => {
-  const t = useTranslations("Team");
-
   return (
     <section className="w-full bg-[#f6f6f6] text-gray-800 mb-[30px]">
       {/* 🔥 Banner */}
@@ -65,10 +63,10 @@ const TeamSection = () => {
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
           <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg">
-            {t("bannerTitle")}
+            {t.team.bannerTitle}
           </h1>
           <p className="mt-4 text-lg md:text-xl max-w-2xl text-white/90">
-            {t("bannerSubtitle")}
+            {t.team.bannerSubtitle}
           </p>
         </div>
       </div>
@@ -77,30 +75,30 @@ const TeamSection = () => {
         <div className="max-w-6xl mx-auto text-center space-y-14">
           <div>
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              {t("intro")}
+              {t.team.intro}
               <br />
               <span className="font-semibold text-gray-800 block mt-2">
-                {t("welcome")}
+                {t.team.welcome}
               </span>
             </p>
           </div>
 
           <div className="text-left sm:text-center max-w-3xl mx-auto space-y-6 text-gray-600 text-base sm:text-lg">
-            <p>{t("diverseTeam")}</p>
-            <p>{t("invitation")}</p>
+            <p>{t.team.diverseTeam}</p>
+            <p>{t.team.invitation}</p>
             <p>
               <span className="font-semibold text-gray-800">
-                {t("whatNeededTitle")}
+                {t.team.whatNeededTitle}
               </span>
               <br />
-              {t("whatNeededDesc")}
+              {t.team.whatNeededDesc}
             </p>
-            <p>{t("newsAndBonus")}</p>
-            <p className="font-semibold text-black">{t("finalNote")}</p>
+            <p>{t.team.newsAndBonus}</p>
+            <p className="font-semibold text-black">{t.team.finalNote}</p>
           </div>
 
           <h3 className="text-2xl sm:text-3xl font-semibold text-black pt-10">
-            {t("teamTitle")}
+            {t.team.teamTitle}
           </h3>
         </div>
       </div>
@@ -132,14 +130,14 @@ const TeamSection = () => {
                   className="flex items-center justify-center gap-2 px-2 py-1 w-1/3 max-w-[180px] text-black bg-[#5fbdcf] rounded-2xl hover:bg-[#fd9443] hover:text-white text-center"
                 >
                   <FaTelegramPlane size={18} />
-                  {t("writeMessage")}
+                  {t.team.writeMessage}
                 </a>
                 <a
                   href={member.website}
                   target="_blank"
                   className="px-2 py-1 w-2/3 max-w-[180px] text-black bg-[#5fbdcf] rounded-2xl hover:bg-[#fd9443] hover:text-white text-center"
                 >
-                  {t("joinTeam")}
+                  {t.team.joinTeam}
                 </a>
               </div>
             </div>

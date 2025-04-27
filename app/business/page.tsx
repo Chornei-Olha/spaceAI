@@ -1,26 +1,10 @@
-import { useTranslations } from "next-intl";
-import { getMessages } from "next-intl/server";
 import React from "react";
 import { Sparkles, Users, Coins } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
-  const messages: any = await getMessages({ locale });
-  const title = messages.BusinessSection.title; // Получаем перевод для титула
-
-  return {
-    title,
-  };
-}
+import t from "../../messages/uk";
 
 const BusinessSection = () => {
-  const t = useTranslations("BusinessSection");
-
   return (
     // <div className="flex flex-col gap-16 w-full text-white">
     //   <section className="w-full bg-[url('/images/bitcoin.jpg')] py-24 px-6 flex flex-col items-center text-center">
@@ -44,10 +28,10 @@ const BusinessSection = () => {
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
           <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg">
-            {t("title")}
+            {t.businessSection.title}
           </h1>
           <p className="mt-4 text-lg md:text-xl max-w-2xl text-white/90">
-            {t("heroDescription")}
+            {t.businessSection.heroDescription}
           </p>
         </div>
       </div>
@@ -57,42 +41,95 @@ const BusinessSection = () => {
           {/* Section 2 */}
           <div className="flex items-center gap-2 text-[#5fbdcf] text-2xl font-semibold">
             <Users className="w-6 h-6 " />
-            <h2>{t("sections.section2.title")}</h2>
+            <h2>{t.businessSection.sections.section2.title}</h2>
           </div>
           <Card>
             <CardContent className="space-y-4 pt-6 text-black">
-              <p>{t("sections.section2.description")}</p>
-              <p>
-                <strong>{t("sections.section2.invitationCodeSystem")}</strong>
-              </p>
-              <p>{t("sections.section2.referrerIncome")}</p>
+              <p>{t.businessSection.sections.section2.description}</p>
               <p>
                 <strong>
-                  {t("sections.section2.referralProgram.generation6")}
+                  {t.businessSection.sections.section2.invitationCodeSystem}
+                </strong>
+              </p>
+              <p>{t.businessSection.sections.section2.referrerIncome}</p>
+              <p>
+                <strong>
+                  {
+                    t.businessSection.sections.section2.referralProgram
+                      .generation6
+                  }
                 </strong>
               </p>
               <ul className="list-disc list-inside ml-4">
-                <li>{t("sections.section2.referralProgram.generation1")}</li>
-                <li>{t("sections.section2.referralProgram.generation2")}</li>
-                <li>{t("sections.section2.referralProgram.generation3")}</li>
-                <li>{t("sections.section2.referralProgram.generation4")}</li>
-                <li>{t("sections.section2.referralProgram.generation5")}</li>
                 <li>
-                  {t("sections.section2.referralProgram.generation6to10")}
+                  {
+                    t.businessSection.sections.section2.referralProgram
+                      .generation1
+                  }
+                </li>
+                <li>
+                  {
+                    t.businessSection.sections.section2.referralProgram
+                      .generation2
+                  }
+                </li>
+                <li>
+                  {
+                    t.businessSection.sections.section2.referralProgram
+                      .generation3
+                  }
+                </li>
+                <li>
+                  {
+                    t.businessSection.sections.section2.referralProgram
+                      .generation4
+                  }
+                </li>
+                <li>
+                  {
+                    t.businessSection.sections.section2.referralProgram
+                      .generation5
+                  }
+                </li>
+                <li>
+                  {
+                    t.businessSection.sections.section2.referralProgram
+                      .generation6to1
+                  }
                 </li>
               </ul>
               <p>
                 <strong>
-                  {t("sections.section2.bonusForDeposit.generation4")}
+                  {
+                    t.businessSection.sections.section2.bonusForDeposit
+                      .generation4
+                  }
                 </strong>
               </p>
               <ul className="list-disc list-inside ml-4">
-                <li>{t("sections.section2.bonusForDeposit.generation1")}</li>
-                <li>{t("sections.section2.bonusForDeposit.generation2")}</li>
-                <li>{t("sections.section2.bonusForDeposit.generation3")}</li>
+                <li>
+                  {
+                    t.businessSection.sections.section2.bonusForDeposit
+                      .generation1
+                  }
+                </li>
+                <li>
+                  {
+                    t.businessSection.sections.section2.bonusForDeposit
+                      .generation2
+                  }
+                </li>
+                <li>
+                  {
+                    t.businessSection.sections.section2.bonusForDeposit
+                      .generation3
+                  }
+                </li>
               </ul>
               <p>
-                <strong>{t("sections.section2.qualification")}</strong>
+                <strong>
+                  {t.businessSection.sections.section2.qualification}
+                </strong>
               </p>
             </CardContent>
           </Card>
@@ -100,46 +137,52 @@ const BusinessSection = () => {
           {/* Section 3 */}
           <div className="flex items-center gap-2 text-[#5fbdcf] text-2xl font-semibold">
             <Coins className="w-6 h-6" />
-            <h2>{t("sections.section3.title")}</h2>
+            <h2>{t.businessSection.sections.section3.title}</h2>
           </div>
           <Card>
             <CardContent className="space-y-4 pt-6 text-black">
-              <p>{t("intro")}</p>
+              <p>{t.businessSection.intro}</p>
 
               <p>
-                <strong>{t("stakeTitle")}</strong>
+                <strong>{t.businessSection.stakeTitle}</strong>
                 <br />
-                {t("stakeText")}
+                {t.businessSection.stakeText}
               </p>
 
-              <p>{t("unstakeText")}</p>
+              <p>{t.businessSection.unstakeText}</p>
 
               <p>
-                <strong>{t("rewardsTitle")}</strong>
+                <strong>{t.businessSection.rewardsTitle}</strong>
                 <br />
-                {t("rewardsText")}
+                {t.businessSection.rewardsText}
               </p>
 
-              <p>{t("sections.section3.description")}</p>
+              <p>{t.businessSection.sections.section3.description}</p>
               <ul className="list-disc list-inside ml-4">
                 <li>
-                  <strong>{t("sections.section3.stakingSAT")}</strong>
+                  <strong>
+                    {t.businessSection.sections.section3.stakingSAT}
+                  </strong>
                 </li>
                 <li>
-                  <strong>{t("sections.section3.earlyCompletion")}</strong>
+                  <strong>
+                    {t.businessSection.sections.section3.earlyCompletion}
+                  </strong>
                 </li>
               </ul>
               <p className="text-center">
-                <strong>{t("sections.section3.interestRates.apr")}</strong>
+                <strong>
+                  {t.businessSection.sections.section3.interestRates.apr}
+                </strong>
               </p>
               <table className="w-1/2 mx-auto text-left border mt-4 border-collapse">
                 <thead>
                   <tr className="bg-blue-50 text-black">
                     <th className="p-2 border">
-                      {t("sections.section3.interestRates.amount")}
+                      {t.businessSection.sections.section3.interestRates.amount}
                     </th>
                     <th className="p-2 border">
-                      {t("sections.section3.interestRates.apr")}
+                      {t.businessSection.sections.section3.interestRates.apr}
                     </th>
                   </tr>
                 </thead>
@@ -162,9 +205,9 @@ const BusinessSection = () => {
                   </tr>
                 </tbody>
               </table>
-              <p>{t("sections.section3.userChoice")}</p>
+              <p>{t.businessSection.sections.section3.userChoice}</p>
               <div className="bg-blue-50 border border-blue-200 text-blue-800 text-base md:text-lg p-4 rounded-xl shadow-sm">
-                {t("boostInfo")}
+                {t.businessSection.boostInfo}
               </div>
             </CardContent>
           </Card>
@@ -172,33 +215,35 @@ const BusinessSection = () => {
           {/* Section 4 */}
           <div className="flex items-center gap-2 text-[#5fbdcf] text-2xl font-semibold">
             <Sparkles className="w-6 h-6" />
-            <h2>{t("sections.section4.title")}</h2>
+            <h2>{t.businessSection.sections.section4.title}</h2>
           </div>
           <Card>
             <CardContent className="space-y-4 pt-6 text-black">
-              <p>{t("sections.section4.description")}</p>
+              <p>{t.businessSection.sections.section4.description}</p>
               <ul className="list-disc list-inside ml-4">
-                <li>{t("sections.section4.bonus")}</li>
-                <li>{t("sections.section4.S1")}</li>
-                <li>{t("sections.section4.referrerIncome")}</li>
+                <li>{t.businessSection.sections.section4.bonus}</li>
+                <li>{t.businessSection.sections.section4.S1}</li>
+                <li>{t.businessSection.sections.section4.referrerIncome}</li>
               </ul>
               <p>
-                <strong>{t("sections.section4.monthlyIncome")}</strong>
+                <strong>
+                  {t.businessSection.sections.section4.monthlyIncome}
+                </strong>
               </p>
               <ul className="list-disc list-inside ml-4">
-                <li>{t("sections.section4.S2")}</li>
-                <li>{t("sections.section4.monthlyIncomeS2")}</li>
+                <li>{t.businessSection.sections.section4.S2}</li>
+                <li>{t.businessSection.sections.section4.monthlyIncomeS2}</li>
               </ul>
-              <p>{t("sections.section4.growthToS4")}</p>
+              <p>{t.businessSection.sections.section4.growthToS4}</p>
             </CardContent>
           </Card>
         </div>
       </section>
 
       <section className="border border-blue-400 rounded-2xl mt-10 p-5 bg-blue-50 dark:bg-blue-950 text-blue-900 dark:text-blue-100 max-w-3xl mx-auto text-left shadow-md">
-        <h2 className="text-2xl font-bold">{t("inviteTitle")}</h2>
-        <p>{t("inviteDescription1")}</p>
-        <p>{t("inviteDescription2")}</p>
+        <h2 className="text-2xl font-bold">{t.homePage.inviteTitle}</h2>
+        <p>{t.homePage.inviteDescription1}</p>
+        <p>{t.homePage.inviteDescription2}</p>
         <p>
           <a
             href="https://www.facebook.com/groups/spaceaicrypt"
@@ -224,12 +269,12 @@ const BusinessSection = () => {
             rel="noopener noreferrer"
             className="text-blue-600 underline"
           >
-            {t("registrationDocs")}
+            {t.homePage.registrationDocs}
           </a>
         </p>
-        <p>{t("inviteDescription3")}</p>
-        <p>{t("inviteDescription4")}</p>
-        <p className="font-semibold">{t("inviteClosing")}</p>
+        <p>{t.homePage.inviteDescription3}</p>
+        <p>{t.homePage.inviteDescription4}</p>
+        <p className="font-semibold">{t.homePage.inviteClosing}</p>
         <p className="text-sm text-gray-500">
           #криптовалюта #крипта #crypt #USDT #SAT #SpaceAI #Space_AI
         </p>

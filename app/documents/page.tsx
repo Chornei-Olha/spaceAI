@@ -1,24 +1,8 @@
-import { useTranslations } from "next-intl";
-import { getMessages } from "next-intl/server";
 import React from "react";
 import Image from "next/image"; // Import the Image component
-
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
-  const messages: any = await getMessages({ locale });
-  const title = messages.NavbarLinks.aboutTitle;
-
-  return {
-    title,
-  };
-}
+import t from "../../messages/uk";
 
 const DocumentsSection = () => {
-  const t = useTranslations("DocumentsSection");
-
   return (
     <section className="w-full bg-[#f6f6f6] text-gray-800">
       {/* 🔥 Banner */}
@@ -32,10 +16,10 @@ const DocumentsSection = () => {
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
           <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg">
-            {t("title")}
+            {t.documentsSection.title}
           </h1>
           <p className="mt-4 text-lg md:text-xl max-w-2xl text-white/90">
-            {t("heroDescription")}
+            {t.documentsSection.heroDescription}
           </p>
         </div>
       </div>
@@ -44,38 +28,42 @@ const DocumentsSection = () => {
       <section className="w-full px-6 pt-7 max-w-6xl mx-auto space-y-12 text-gray-800">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold">{t("sectionTitle")}</h2>
+            <h2 className="text-2xl font-bold">
+              {t.documentsSection.sectionTitle}
+            </h2>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
               <li>
-                <strong>{t("item1Title")}</strong> {t("item1Text")}{" "}
+                <strong>{t.documentsSection.item1Title}</strong>{" "}
+                {t.documentsSection.item1Text}{" "}
                 <a
                   href="https://www.spaios.us/documents.html"
                   target="_blank"
                   className="text-blue-600 underline"
                 >
-                  {t("item1Link")}
+                  {t.documentsSection.item1Link}
                 </a>
                 .
               </li>
               <li>
-                <strong>{t("item2Title")}</strong>{" "}
+                <strong>{t.documentsSection.item2Title}</strong>{" "}
                 <a
                   href="https://www.spaios.us/documents.html"
                   target="_blank"
                   className="text-blue-600 underline"
                 >
-                  {t("item2Link")}
+                  {t.documentsSection.item2Link}
                 </a>
                 .
               </li>
               <li>
-                <strong>{t("item3Title")}</strong> {t("item3Text")}{" "}
+                <strong>{t.documentsSection.item3Title}</strong>{" "}
+                {t.documentsSection.item3Text}{" "}
                 <a
                   href="https://www.spaios.us/documents.html"
                   target="_blank"
                   className="text-blue-600 underline"
                 >
-                  {t("item3Link")}
+                  {t.documentsSection.item3Link}
                 </a>
                 .
               </li>
@@ -96,8 +84,10 @@ const DocumentsSection = () => {
 
       {/* Final Message */}
       <section className="w-full px-6 pt-20 text-center max-w-3xl mx-auto">
-        <h2 className="text-2xl font-bold mb-4">{t("futureTitle")}</h2>
-        <p className="text-gray-600">{t("futureText")}</p>
+        <h2 className="text-2xl font-bold mb-4">
+          {t.documentsSection.futureTitle}
+        </h2>
+        <p className="text-gray-600">{t.documentsSection.futureText}</p>
       </section>
     </section>
   );

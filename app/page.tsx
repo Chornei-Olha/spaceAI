@@ -1,12 +1,8 @@
 import Image from "next/image";
-import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { useLocale } from "next-intl";
+import t from "../messages/uk";
 
 export default function Home() {
-  const t = useTranslations("HomePage");
-  const locale = useLocale();
-
   return (
     <section className="w-full bg-[#f6f6f6] text-gray-800 mb-[30px] space-y-20">
       {/* 🔥 Banner */}
@@ -20,24 +16,24 @@ export default function Home() {
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
           <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg">
-            {t("title")}
+            {t.homePage.title}
           </h1>
         </div>
       </div>
 
       {/* Секция без картинки */}
       <section className="space-y-4 text-base sm:text-lg leading-relaxed mx-auto">
-        <p>{t("text1")}</p>
-        <p>{t("text2")}</p>
+        <p>{t.homePage.text1}</p>
+        <p>{t.homePage.text2}</p>
       </section>
 
       {/* Контрастный блок */}
       <section className="border border-gray-300 rounded-xl p-8 shadow-lg bg-white dark:bg-zinc-900 dark:border-zinc-700 max-w-4xl mx-auto">
         <div className="space-y-4 text-base sm:text-lg leading-relaxed text-center">
           <p>
-            {t("text3")} <strong>Space AI</strong>.
+            {t.homePage.text3} <strong>Space AI</strong>.
           </p>
-          <p>{t("text4")}</p>
+          <p>{t.homePage.text4}</p>
         </div>
       </section>
 
@@ -53,16 +49,16 @@ export default function Home() {
           />
         </div>
         <div className="w-full md:w-1/2 space-y-4 text-base sm:text-lg leading-relaxed">
-          <p>{t("text5")}</p>
-          <p>{t("text6")}</p>
-          <p>{t("text7")}</p>
+          <p>{t.homePage.text5}</p>
+          <p>{t.homePage.text6}</p>
+          <p>{t.homePage.text7}</p>
         </div>
       </section>
 
       {/* Блок без картинки */}
       <section className="space-y-4 text-base sm:text-lg leading-relaxed mx-auto">
         <p>
-          {t("text8")} <strong>Space AI</strong> — {t("text9")}{" "}
+          {t.homePage.text8} <strong>Space AI</strong> — {t.homePage.text9}{" "}
           <a
             href="https://www.spaios.us/"
             target="_blank"
@@ -72,15 +68,15 @@ export default function Home() {
           </a>
         </p>
         <p>
-          {t("text10")}{" "}
+          {t.homePage.text10}{" "}
           <strong>
             <Link
-              href={`/${locale}/team`}
+              href={"/team"}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline text-blue-600"
             >
-              <strong>{t("text11")}</strong>
+              <strong>{t.homePage.text11}</strong>
             </Link>
           </strong>
           !
@@ -90,9 +86,9 @@ export default function Home() {
       {/* Call to Action */}
       <section className="border border-blue-400 rounded-2xl p-10 bg-blue-50 dark:bg-blue-950 text-blue-900 dark:text-blue-100 max-w-3xl mx-auto text-center shadow-md">
         <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
-          {t("callToActionTitle")}
+          {t.homePage.callToActionTitle}
         </h2>
-        <p className="text-lg sm:text-xl">{t("callToActionText")}</p>
+        <p className="text-lg sm:text-xl">{t.homePage.callToActionText}</p>
       </section>
 
       {/* Секция с картинкой справа */}
@@ -108,13 +104,13 @@ export default function Home() {
         </div>
         <div className="w-full md:w-1/2 space-y-4 text-base sm:text-lg leading-relaxed">
           <p>
-            <strong>Space AI</strong> — {t("text12")}
+            <strong>Space AI</strong> — {t.homePage.text12}
           </p>
           <p>
-            <strong>{t("text13")}</strong> {t("text14")}
+            <strong>{t.homePage.text13}</strong> {t.homePage.text14}
           </p>
           <p>
-            {t("text15")}{" "}
+            {t.homePage.text15}{" "}
             <a
               href="https://www.spaios.us/"
               target="_blank"
@@ -122,14 +118,14 @@ export default function Home() {
             >
               www.spaios.us
             </a>{" "}
-            | {t("text16")}{" "}
+            | {t.homePage.text16}{" "}
             <Link
-              href={`/${locale}/team`}
+              href={"/team"}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline text-blue-600"
             >
-              <strong>{t("text11")}</strong>
+              <strong>{t.homePage.text11}</strong>
             </Link>
             .
           </p>
