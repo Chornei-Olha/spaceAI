@@ -14,8 +14,8 @@ const teamMembers = [
   },
   {
     name: "Sofia",
-    image: "/images/team/sofiya.jpg",
-    telegram: "https://t.me/sofia_rudenko",
+    image: "/images/team/sofiya.jpeg",
+    telegram: "https://t.me/Tani_Happy",
     website:
       "https://app.spaceaius.com/#/pages/login/login?invitationCode=4082380296",
   },
@@ -35,7 +35,7 @@ const teamMembers = [
   },
   {
     name: "Volodumur",
-    image: "/images/team/volodimirCut.jpg",
+    image: "/images/team/volodimirCut.jpeg",
     telegram: "https://t.me/Vokodko",
     website:
       "https://app.spaceaius.com/#/pages/login/login?invitationCode=6682176310",
